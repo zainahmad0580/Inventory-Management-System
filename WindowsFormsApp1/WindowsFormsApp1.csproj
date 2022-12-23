@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1597F235-0ECE-48B0-8CC6-8344FC1A6E60}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Account.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Beautyitems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beautyitems.Designer.cs">
+      <DependentUpon>Beautyitems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkout.Designer.cs">
+      <DependentUpon>checkout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkoutusercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="checkoutusercontrol.Designer.cs">
+      <DependentUpon>checkoutusercontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="createnewaccount.cs" />
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses2.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses2.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses3.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses3.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses4.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses4.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses5.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses5.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses6.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses6.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="OrderSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderSummary.Designer.cs">
+      <DependentUpon>OrderSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="itemss.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="itemss.Designer.cs">
+      <DependentUpon>itemss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kiditem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kiditem.Designer.cs">
+      <DependentUpon>Kiditem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kiddata.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kiddata.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Listitem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Listitem.Designer.cs">
+      <DependentUpon>Listitem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="createaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createaccount.Designer.cs">
+      <DependentUpon>createaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mens.Designer.cs">
+      <DependentUpon>Mens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sportsitem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sportsitem.Designer.cs">
+      <DependentUpon>Sportsitem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sportss.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sportss.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="women.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="women.Designer.cs">
+      <DependentUpon>women.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Beautyitems.resx">
+      <DependentUpon>Beautyitems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkout.resx">
+      <DependentUpon>checkout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkoutusercontrol.resx">
+      <DependentUpon>checkoutusercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="itemss.resx">
+      <DependentUpon>itemss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kiditem.resx">
+      <DependentUpon>Kiditem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listitem.resx">
+      <DependentUpon>Listitem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createaccount.resx">
+      <DependentUpon>createaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mens.resx">
+      <DependentUpon>Mens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderSummary.resx">
+      <DependentUpon>OrderSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sportsitem.resx">
+      <DependentUpon>Sportsitem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="women.resx">
+      <DependentUpon>women.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Account.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Account.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Account.dbml.layout">
+      <DependentUpon>Account.dbml</DependentUpon>
+    </None>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <None Include="DataClasses2.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses2.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses2.dbml.layout">
+      <DependentUpon>DataClasses2.dbml</DependentUpon>
+    </None>
+    <None Include="DataClasses3.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses3.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses3.dbml.layout">
+      <DependentUpon>DataClasses3.dbml</DependentUpon>
+    </None>
+    <None Include="DataClasses4.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses4.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses4.dbml.layout">
+      <DependentUpon>DataClasses4.dbml</DependentUpon>
+    </None>
+    <None Include="DataClasses5.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses5.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses5.dbml.layout">
+      <DependentUpon>DataClasses5.dbml</DependentUpon>
+    </None>
+    <None Include="DataClasses6.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses6.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses6.dbml.layout">
+      <DependentUpon>DataClasses6.dbml</DependentUpon>
+    </None>
+    <None Include="kiddata.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>kiddata.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kiddata.dbml.layout">
+      <DependentUpon>kiddata.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Sportss.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Sportss.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Sportss.dbml.layout">
+      <DependentUpon>Sportss.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clothes-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-soccer-94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-track-and-field-skin-type-1-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hammer-throw-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hammer-throw-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shaving-man-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assingment 2 Output 1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkout-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-circled-user-male-skin-type-1-and-2-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\678-6781630_icon-profile-bio-avatar-person-symbol-chat-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-circled-user-male-skin-type-7-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-content-management-system-100 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-content-management-system-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-content-management-system-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-content-management-system-100 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-24 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-24 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-24 %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-user-male-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cart-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shopping-cart-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shopping-cart-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shopping-cart-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphicloads-100-Flat-Home.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-check-out-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-new-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipping address.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture1.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
